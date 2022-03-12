@@ -1,6 +1,10 @@
-import "./App.css";
-import './css/normallize.css'
+import './App.css';
+import './css/normallize.css';
+import Header from './components/Header/Header';
 
-const App =()=> <div className="App" />
-
+const App = () => (
+  <div>
+    <Header />
+  </div>
+);
 export default App;
