@@ -23,14 +23,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
+        <a href="/" className="logo">
+          <img src={logo} alt="logo" width="64px" height="40px" />
+        </a>
         <nav className={`nav${navOpen ? ' show' : ''}`}>
-          <a href="/" className="logo">
-            <img src={logo} alt="logo" width="64px" height="40px" />
-          </a>
           <ul className="header__nav">
             {headerNav.map((e) => (
               <li key={e.display}>
-                <a href="e.path">{e.display}</a>
+                <a href={e.path}>{e.display}</a>
               </li>
             ))}
           </ul>
