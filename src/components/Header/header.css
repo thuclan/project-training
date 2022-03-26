@@ -1,6 +1,5 @@
 .btn {
   border: 1px solid #2d6180;
-
   color: #fff;
   font-size: 18px;
   background-color: #2d6180;
@@ -10,34 +9,38 @@
 
 .header {
   width: 100%;
-  height: 3rem;
+  height: 48px;
   padding: 0 20px;
   background-color: #2d6180;
   color: #fff;
 }
 
 .header .header__container {
+  position: relative;
   display: flex;
   height: 100%;
   text-align: center;
   justify-content: space-between;
   align-items: center;
-
   font-size: 14px;
   font-weight: 700;
 }
 
 .header .header__container .logo {
-  padding-left: 16px;
-  line-height: 0.95;
+  display: inline-block;
+  height: 40px;
+  margin-left: 16px;
   z-index: 10;
 }
 
+.header .logo > img {
+  height: 100%;
+}
+
 .nav {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
-  height: 100%;
   width: 100%;
   background-color: #2d6180;
   display: none;
@@ -46,16 +49,14 @@
 .header__nav > li > a {
   color: #fff;
   font-size: 18px;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .nav.show {
-  display: grid;
-  grid-auto-flow: row dense;
-  grid-template-columns: 1fr;
+  display: block;
   height: 100%;
-  font-size: 1.6rem;
-  padding: 52px 40px;
+  width: 100%;
+  font-size: 2.5rem;
 }
 
 .nav.show .btn--search {
@@ -71,8 +72,7 @@
 
 @media screen and (min-width: 768px) {
   .header .header__container .nav,
-  .header__box,
-  .header__nav {
+  .header__box {
     height: 48px;
     align-items: center;
     justify-content: flex-end;
@@ -86,8 +86,6 @@
   }
 
   .nav.show .btn--search {
-    background-color: #fff;
-    border-radius: 5px;
     display: inline;
   }
 
@@ -97,12 +95,13 @@
 
   .header__nav {
     position: relative;
-    right: 64px;
+    display: flex;
+    left: 16px;
   }
 
   .header__nav > li > a {
     color: #fff;
     font-size: 18px;
-    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 }

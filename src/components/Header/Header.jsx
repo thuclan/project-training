@@ -24,7 +24,7 @@ const Header = () => {
     <header className="header">
       <div className="header__container">
         <a href="/" className="logo">
-          <img src={logo} alt="logo" width="64px" height="40px" />
+          <img src={logo} alt="logo" />
         </a>
         <nav className={`nav${navOpen ? ' show' : ''}`}>
           <ul className="header__nav">
@@ -41,7 +41,7 @@ const Header = () => {
             <button className="btn" type="button">
               Search
             </button>
-            <button type="submit" className="btn btn--search">
+            <button type="submit" className="btn--search">
               <img src={search} width="15px" height="15px" alt="icon search" />
             </button>
           </div>
