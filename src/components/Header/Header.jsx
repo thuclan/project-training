@@ -5,6 +5,7 @@ import './header.css';
 import search from '../../static/I_icons/search.svg';
 import menu from '../../static/I_icons/menu.svg';
 import close from '../../static/I_icons/close.svg';
+import logo from '../../static/I_images/logo.png';
 
 const headerNav = [
   { display: 'Diễn đàn', path: '/' },
@@ -24,14 +25,12 @@ const Header = () => {
       <div className="header__container">
         <nav className={`nav${navOpen ? ' show' : ''}`}>
           <a href="/" className="logo">
-            <p href="#">
-              forum <br /> <span>SPKT</span>
-            </p>
+            <img src={logo} alt="logo" width="64px" height="40px" />
           </a>
           <ul className="header__nav">
             {headerNav.map((e) => (
               <li key={e.display}>
-                <a href="/">{e.display}</a>
+                <a href="e.path">{e.display}</a>
               </li>
             ))}
           </ul>
@@ -48,7 +47,7 @@ const Header = () => {
           </div>
         </nav>
         <button type="button" className="btn--menu" onClick={handleExpanse}>
-          <img src={`${navOpen ? close : menu}`} width="15px" height="15px" alt="icon menu" />
+          <img src={navOpen ? close : menu} width="15px" height="15px" alt="icon menu" />
         </button>
       </div>
     </header>
