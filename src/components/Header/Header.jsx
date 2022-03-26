@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 import './header.css';
 
-import search from '../../static/I_icons/search.svg';
-import menu from '../../static/I_icons/menu.svg';
-import close from '../../static/I_icons/close.svg';
-import logo from '../../static/I_images/logo.png';
+import search from '../../static/icons/search.svg';
+import menu from '../../static/icons/menu.svg';
+import close from '../../static/icons/close.svg';
+import logo from '../../static/images/logo.png';
 
 const headerNav = [
   { display: 'Diễn đàn', path: '/' },
@@ -42,12 +42,12 @@ const Header = () => {
               Search
             </button>
             <button type="submit" className="btn--search">
-              <img src={search} width="15px" height="15px" alt="icon search" />
+              <img src={search} alt="icon search" />
             </button>
           </div>
         </nav>
         <button type="button" className="btn--menu" onClick={handleExpanse}>
-          <img src={navOpen ? close : menu} width="15px" height="15px" alt="icon menu" />
+          <img src={navOpen ? close : menu} alt="icon menu" />
         </button>
       </div>
     </header>
