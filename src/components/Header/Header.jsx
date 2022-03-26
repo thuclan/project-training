@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+
 import './header.css';
-import search from '../../image/search.svg';
-import menu from '../../image/menu.svg';
-import close from '../../image/close.svg';
+
+import search from '../../static/I_icons/search.svg';
+import menu from '../../static/I_icons/menu.svg';
+import close from '../../static/I_icons/close.svg';
 
 const headerNav = [
   { display: 'Diễn đàn', path: '/' },
@@ -20,7 +22,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <nav className={`nav ${navOpen ? 'show' : ''}`}>
+        <nav className={`nav${navOpen ? ' show' : ''}`}>
           <a href="/" className="logo">
             <p href="#">
               forum <br /> <span>SPKT</span>
@@ -28,21 +30,21 @@ const Header = () => {
           </a>
           <ul className="header__nav">
             {headerNav.map((e) => (
-              <li key={e.display}>{e.display}</li>
+              <li key={e.display}>
+                <a href="/">{e.display}</a>
+              </li>
             ))}
           </ul>
           <div className="header__box">
             <button className="btn" type="button">
               Đăng nhập
             </button>
-            <form action="/event/" method="get" className="form__search">
-              <button className="btn" type="button">
-                Search
-              </button>
-              <button type="submit" className="btn btn--search">
-                <img src={search} width="15px" height="15px" alt="icon search" />
-              </button>
-            </form>
+            <button className="btn" type="button">
+              Search
+            </button>
+            <button type="submit" className="btn btn--search">
+              <img src={search} width="15px" height="15px" alt="icon search" />
+            </button>
           </div>
         </nav>
         <button type="button" className="btn--menu" onClick={handleExpanse}>

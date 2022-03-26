@@ -1,8 +1,11 @@
 .btn {
-  border-style: none;
+  border: 1px solid #2d6180;
+
   color: #fff;
+  font-size: 18px;
   background-color: #2d6180;
   padding: 0 20px;
+  font-weight: 700;
 }
 
 .header {
@@ -43,13 +46,20 @@
   display: none;
 }
 
+.header__nav > li > a {
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 24px;
+}
+
 .nav.show {
-  column-gap: 1.6rem;
   display: grid;
   grid-auto-flow: row dense;
   grid-template-columns: 1fr;
   height: 100%;
   font-size: 1.6rem;
+  padding: 52px 40px;
+  justify-content: flex-end;
 }
 
 .nav.show .btn--search {
@@ -79,7 +89,13 @@
     display: none;
   }
 
-  .btn--search {
+  .nav.show .btn--search {
+    background-color: #fff;
+    border-radius: 5px;
     display: inline;
+  }
+
+  .nav.show {
+    padding: 0;
   }
 }
