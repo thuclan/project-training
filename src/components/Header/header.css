@@ -40,6 +40,7 @@
 }
 .header--logo {
   display: inline;
+  padding-left: 1rem;
 }
 
 .nav.show {
@@ -67,10 +68,14 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
+    font-size: 14px;
   }
 
   .header .header__container .btn--menu,
   .btn--close {
     display: none;
+  }
+  .btn--search {
+    display: inline;
   }
 }
