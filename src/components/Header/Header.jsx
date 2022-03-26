@@ -21,11 +21,11 @@ const Header = () => {
     <header className="header">
       <div className="header__container">
         <nav className={`nav ${navOpen ? 'show' : ''}`}>
-          <div className="header--logo">
+          <a href="/" className="logo">
             <p href="#">
               forum <br /> <span>SPKT</span>
             </p>
-          </div>
+          </a>
           <ul className="header__nav">
             {headerNav.map((e) => (
               <li key={e.display}>{e.display}</li>

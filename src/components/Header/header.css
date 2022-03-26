@@ -21,11 +21,14 @@
   font-weight: 700;
 }
 
-.header .header__container .header--logo {
+.header .header__container .logo {
+  color: #fff;
+  padding-left: 16px;
+  font-size: 14px;
   align-items: center;
   line-height: 0.95;
 }
-.header .header__container .header--logo span {
+.header .header__container .logo span {
   font-size: 18px;
 }
 
@@ -37,11 +40,6 @@
   width: 100%;
   background-color: #2d6180;
   display: none;
-}
-
-.header--logo {
-  display: inline;
-  padding-left: 16px;
 }
 
 .nav.show {
