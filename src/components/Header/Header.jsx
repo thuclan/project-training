@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState } from 'react';
 import './header.css';
 import search from '../../image/search.svg';
@@ -19,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <div className="header__container">
         <nav className={`nav ${navOpen ? 'show' : ''}`}>
           <div className="header--logo">
@@ -47,13 +46,10 @@ const Header = () => {
           </div>
         </nav>
         <button type="button" className="btn--menu" onClick={handleExpanse}>
-          <img src={menu} width="15px" height="15px" alt="icon menu" />
-        </button>
-        <button type="button" className="btn--close" onClick={handleExpanse}>
-          <img src={close} width="15px" height="15px" alt="icon close" />
+          <img src={`${navOpen ? close : menu}`} width="15px" height="15px" alt="icon menu" />
         </button>
       </div>
-    </div>
+    </header>
   );
 };
 
