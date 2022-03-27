@@ -7,6 +7,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 *,
 *::after,
@@ -28,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /**
@@ -55,6 +57,26 @@ h6 {
 h1 {
   font-size: 64px;
   margin: 0.67em 0;
+}
+
+li {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+a {
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+ul,
+ol,
+ul ul,
+ul ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* Grouping content
@@ -171,6 +193,9 @@ img {
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
+button {
+  cursor: pointer;
+}
 
 button,
 input,
