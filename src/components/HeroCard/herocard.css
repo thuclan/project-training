@@ -1,0 +1,62 @@
+.hero {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.hero > img {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 62px;
+  left: 31px;
+  z-index: -10;
+}
+
+.hero__content {
+  margin: auto;
+  position: relative;
+  padding: 0 12px;
+  text-align: center;
+  z-index: -5;
+}
+
+.hero__content h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 28px;
+  color: #000000;
+}
+
+.hero__content h1 {
+  font-size: 2.5rem;
+  color: #2d6180;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+}
+
+.hero__content h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .hero > img {
+    position: absolute;
+    width: 40%;
+    height: 80%;
+  }
+
+  .hero__content {
+    position: absolute;
+    width: 50vw;
+    top: 30vh;
+    right: 20px;
+  }
+}

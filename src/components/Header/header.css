@@ -61,6 +61,7 @@
   height: 100%;
   width: 100%;
   font-size: 2.5rem;
+  /* z-index: 20; */
 }
 
 .nav .btn--search {
