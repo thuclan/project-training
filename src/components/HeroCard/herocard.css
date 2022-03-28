@@ -18,6 +18,9 @@
 
 .hero__content {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   position: relative;
   padding: 0 12px;
   text-align: center;
