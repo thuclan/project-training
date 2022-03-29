@@ -1,78 +1,70 @@
 .hero {
-  position: relative;
-  display: flex;
-  height: 100vh;
-  width: 100%;
+  text-align: center;
   padding: 16px 16px;
 }
 
 .hero > img {
-  position: absolute;
-  width: 80%;
-  height: 50%;
-  top: 62px;
-  left: 31px;
+  max-width: 100%; /* responsive + retain image dimension */
+  max-height: 200px; /* responsive + retain image dimension */
   z-index: -10;
-  animation: run 0.5s alternate;
+  animation: bounce 0.5s ease-out;
 }
 
-.hero__content {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  position: relative;
-  padding: 0 12px;
-  text-align: center;
-  z-index: -5;
-}
-
-.hero__content h2 {
-  font-size: 2rem;
+.hero__content .text {
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 28px;
   color: #000000;
-  animation: run 1s alternate;
+  animation: bounce 1s ease-out;
 }
 
 .hero__content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #2d6180;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 32px;
   letter-spacing: 0.03em;
-  animation: run 1.5s alternate;
+  animation: bounce 1.5s ease-out;
 }
 
-.hero__content h3 {
+.hero__content p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 24px;
   letter-spacing: 0.03em;
-  color: #000000;
-  animation: run 1.5s alternate;
+  color: #000;
+  animation: bounce 1.5s ease-out;
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: calc(100vh - 48px); /* 48px = header height */
+    padding: 16px;
+  }
+
   .hero > img {
-    position: absolute;
-    width: 40%;
-    height: 80%;
+    max-width: 50%;
+    max-height: calc(100vh-48px);
   }
 
   .hero__content {
-    position: absolute;
-    width: 50vw;
-    top: 30vh;
-    right: 20px;
+    flex-grow: 1;
   }
 }
 
-@keyframes run {
-  from {
+@keyframes bounce {
+  0% {
     transform: translateY(-500px);
   }
-  to {
+
+  50% {
     transform: translateY(12px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
