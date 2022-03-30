@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -37,7 +42,16 @@ body {
    */
 
 main {
-  display: block;
+  flex: 1 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 /**
