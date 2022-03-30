@@ -10,8 +10,8 @@ const HeroCard = () => (
       <div className="text">Chào mừng đến</div>
       <h1>Diễn đàn sinh viên Đại học Sư phạm kỹ thuật TP.HCM</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus in qui fuga,
-        beatae modi recusandae est perspiciatis exercitationem ipsum!
+        Nơi giao lưu, trao đổi kiến thức về lập trình giữa các bạn sinh viên trường ĐH Sư phạm Kỹ
+        thuật Tp. Hồ Chí Minh!
       </p>
     </div>
   </div>

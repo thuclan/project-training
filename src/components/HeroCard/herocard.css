@@ -1,12 +1,11 @@
 .hero {
   text-align: center;
-  padding: 16px 16px;
+  padding: 16px;
 }
 
 .hero > img {
   max-width: 100%; /* responsive + retain image dimension */
   max-height: 200px; /* responsive + retain image dimension */
-  z-index: -10;
   animation: bounce 0.5s ease-out;
 }
 
@@ -14,7 +13,7 @@
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 28px;
-  color: #000000;
+  color: #000;
   animation: bounce 1s ease-out;
 }
 
