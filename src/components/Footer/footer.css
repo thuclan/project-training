@@ -1,59 +1,98 @@
 .icons {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  fill: currentColor;
+  width: 24px;
+  height: 24px;
 }
 
 .footer {
-  text-align: left;
-  flex-shrink: 0;
-  background-color: #2d6180;
-  z-index: -2;
-}
-
-.footer p {
   text-align: center;
+  flex-shrink: 0;
   color: #fff;
+  background-color: #2c3f4f;
 }
 
-.footer__box {
-  padding: px;
+/* footer nav */
+
+.footer__nav {
+  display: block;
+  margin-top: 12px;
 }
 
-.footer__container {
+.footer__nav-left ul {
+  display: block;
+}
+
+/* footer contact links */
+.footer__contact-links {
+  width: 100%;
+  padding: 0 16px;
+  text-align: center;
+  position: relative;
+}
+
+.footer__social {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 18px;
 }
 
-.footer .footer__container > img {
-  display: none;
+/* footer bottom */
+.footer__bottom {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 32px;
 }
 
-.footer__info {
-  padding: 10px 30px;
+.footer__logo {
+  margin-top: 32px;
+}
+
+.footer__logo > p {
+  margin: 12px 0;
+}
+
+.footer__copyright li {
+  display: inline-block;
+}
+
+.footer__copyright li a {
+  font-size: 12px;
   color: #fff;
+  display: block;
+  padding: 8px 16px;
 }
 
-.footer__container .footer__social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 @media screen and (min-width: 768px) {
-  .footer__box {
-    padding: 50px 50px;
+  .footer__nav {
+    display: flex;
+    text-align: center;
+    margin-top: 12px;
   }
 
-  .footer__container {
-    padding: 60px;
-    border-top: 1px solid #979797;
-    border-bottom: 1px solid #979797;
+  .footer__nav-left {
+    flex: 1 1 4rem;
+    border-right: 1px solid #fff;
   }
 
-  .footer .footer__container > img {
-    display: inline;
-    margin-left: 64px;
+  .footer__nav-right {
+    flex: 2 2 3rem;
+  }
+
+  .footer__contact-links::before {
+    width: 33%;
+    right: 0;
+    position: absolute;
+    content: '';
+    border-top: 1px solid #7c98b6;
+    top: 50%;
+  }
+
+  .footer__contact-links::after {
+    left: 0;
+    width: 33%;
+    position: absolute;
+    content: '';
+    border-top: 1px solid #7c98b6;
+    top: 50%;
   }
 }
