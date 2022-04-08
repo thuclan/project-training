@@ -1,8 +1,9 @@
 import './css/normalize.css';
+import './App.css';
 import Header from './components/Header/Header';
 import HeroCard from './components/HeroCard/HeroCard';
 import Footer from './components/Footer/Footer';
-import Button from './components/Button/Button';
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 
 const App = () => (
   <>
@@ -12,7 +13,7 @@ const App = () => (
       <HeroCard />
       <HeroCard />
       <HeroCard />
-      <Button />
+      <ScrollToTopButton />
     </main>
     <Footer />
   </>
