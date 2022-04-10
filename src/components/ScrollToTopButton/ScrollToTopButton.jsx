@@ -29,13 +29,13 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <fragment>
+    <>
       {showTopBtn && (
         <Button type="button" className="back-to-top" onClick={handleScrollTop}>
           <img src={up} alt="backtotop" />
         </Button>
       )}
-    </fragment>
+    </>
   );
 };
 export default ScrollToTopButton;

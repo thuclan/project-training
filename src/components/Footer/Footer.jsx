@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css';
 import logo from '../../static/images/logo.png';
 
-import { facebook, youtube, github, twitter, google } from '../../static/icons/index';
+import { facebook, youtube, github, twitter, google } from '../../static/icons';
 
 const Footer = () => (
   <footer className="footer">

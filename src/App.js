@@ -10,9 +10,7 @@ const App = () => (
     <Header />
     <main>
       <HeroCard />
-      <HeroCard />
-      <HeroCard />
-      <HeroCard />
+
       <ScrollToTopButton />
     </main>
     <Footer />
