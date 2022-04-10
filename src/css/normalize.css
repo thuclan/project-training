@@ -29,16 +29,13 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto',sans-serif;
 }
 
 /**
    * Render the `main` element consistently in IE.
    */
 
-main {
-  display: block;
-}
 
 /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -50,7 +47,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 

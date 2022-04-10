@@ -1,0 +1,9 @@
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 12px;
+  bottom: 48px;
+  background-color: #48cae4;
+  z-index: 800;
+}
