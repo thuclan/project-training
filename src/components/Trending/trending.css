@@ -1,13 +1,15 @@
+.trending{
+  padding: 16px;
+}
+
 .trending h3{
-  padding: 0 20px;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .card__container{
   width: 100%;
-  padding: 20px;
   display:grid;
   grid-template-columns: 1fr;
   gap:20px;
@@ -24,40 +26,39 @@
 .card__info{
   display:flex;
   flex-direction:column;
-  padding:25px 32px;
-  align-items: center;
+  padding:24px 32px;
+  align-items: flex-start;
+  height:100%;
 }
 
-.card__info span {
-  font-size:16px;
-  line-height:1.2;
-  font-weight: 400;;
+.card__info a {
+  font-size:12px;
+  line-height:16px;
+  font-weight: 400;
 }
 
 .card__info .card__info--title {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  margin-top:32px;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top:20px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card__info .card__info--status{
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  margin-top:4px;
+  margin-top:2px;
 }
 
 @media screen and (min-width:768px) {
   .card__container {   
     grid-template-columns: repeat(3,1fr);
-  }
-  
-  .card__info {
-    align-items: start;
-  }
-
-  .card__info .card__info--title {
-    margin-top: 20px;
   }
 }
