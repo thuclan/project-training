@@ -26,11 +26,15 @@ const Trending = () => {
         {posts.map((post) => (
           <div key={post.id} className="card">
             <div className="card__info">
-              <a href="/">{` ${post.owner.firstName} đã đăng trong ${post.tags[2]}`}</a>
+              <a href="/">
+                <span> {post.owner.firstName}</span> đã đăng trong <span>{post.tags[0]}</span>
+              </a>
               <a href="/" className="card__info--title">
                 {post.text}
               </a>
-              <p className="card__info--status">{`${post.publishDate} ${post.likes} Views`}</p>
+              <p className="card__info--status">{`${new Date(
+                post.publishDate
+              ).toLocaleString()} \u00A0\u00A0\u00A0\u00A0 ${post.likes} Views`}</p>
             </div>
           </div>
         ))}
