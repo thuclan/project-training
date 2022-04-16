@@ -3,6 +3,8 @@ import './trending.css';
 
 import apiConfig from '../../api/apiConfig';
 
+import convertDate from '../../utils/ConvertDate';
+
 const Trending = () => {
   const [posts, setPosts] = useState([]);
 
@@ -32,9 +34,10 @@ const Trending = () => {
               <a href="/" className="card__info--title">
                 {post.text}
               </a>
-              <p className="card__info--status">{`${new Date(
-                post.publishDate
-              ).toLocaleString()} \u00A0\u00A0\u00A0\u00A0 ${post.likes} Views`}</p>
+              <p className="card__info--status">
+                {convertDate(post.publishDate)}&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                {post.likes} Lượt xem
+              </p>
             </div>
           </div>
         ))}
