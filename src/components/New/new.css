@@ -52,6 +52,12 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.new__card .new__card--status > span {
+  font-weight: 600;
+  color: #000;
 }
 
 .topic__card {
@@ -86,6 +92,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (min-width: 768px) {
