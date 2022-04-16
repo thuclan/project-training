@@ -14,8 +14,8 @@
 
 .footer__information {
   display: block;
-  font-size:12px;
-  line-height:1.5;
+  font-size: 12px;
+  line-height: 1.5;
   margin-top: 12px;
 }
 
@@ -41,7 +41,7 @@
   margin-top: 32px;
 }
 
-.footer__logo  p {
+.footer__logo p {
   font-size: 12px;
   margin: 12px 0;
 }
@@ -51,7 +51,7 @@
 }
 
 .footer__copyright li {
-  position:relative;
+  position: relative;
   display: inline-block;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .footer__copyright li::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -74,7 +74,7 @@
   height: 2px;
 }
 
-.footer__copyright li:hover::after{
+.footer__copyright li:hover::after {
   width: 50%;
 }
 
